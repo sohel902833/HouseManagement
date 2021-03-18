@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".AdminMainActivity">
+    <include
+        layout="@layout/app_ber_layout"
+        android:id="@+id/admin_Main_Toolbarid"
+        />
+    <Button
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_main_UtilitiesButtonid"
+        android:background="@drawable/buttonbg1"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Utilities"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>

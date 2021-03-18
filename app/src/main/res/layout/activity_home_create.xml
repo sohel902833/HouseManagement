@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".User.HomeCreateActivity">
+
+    <include
+        layout="@layout/app_ber_layout"
+        android:id="@+id/homeCreateAppbarid"
+        />
+
+
+
+<TextView
+    android:layout_below="@+id/homeCreateAppbarid"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txt1"
+    android:text="Home/Shope:"
+    android:textSize="18sp"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:layout_marginLeft="18dp"
+    />
+    <EditText
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt1"
+        android:id="@+id/homeCreate_HomeNameEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/input"
+        android:layout_centerInParent="true"
+        android:hint="Write Your Home Name"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="5dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="18sp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="15dp"
+        android:id="@+id/floorSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Floor"
+        android:textColorHint="#000"
+        app:endIconTint="#000"
+        app:boxStrokeColor="@color/selectedColor"
+        app:boxStrokeWidth="2dp"
+        android:layout_below="@+id/homeCreate_HomeNameEdittext"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/floorAutoCompleteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="#000"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/floorSelector"
+     android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonbg1"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:id="@+id/homeCreate_NextButtonid"
+            />
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/homeCreate_DoneButtonid"
+           android:textColor="#fff"
+            android:text="Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonbg1"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"
+           android:textSize="18sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

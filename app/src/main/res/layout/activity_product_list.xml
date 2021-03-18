@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".User.ProductListActivity">
+    <include
+        layout="@layout/app_ber_layout"
+        android:id="@+id/user_ProductListToolbarid"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/user_ProductListToolbarid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_productListRecyclerviewid"
+        />
+
+
+
+</RelativeLayout>

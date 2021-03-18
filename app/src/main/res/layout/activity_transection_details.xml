@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".TransectionDetailsActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:backgroundTint="@color/selectedColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:id="@+id/main_tabs"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/selectedColor"
+            app:tabSelectedTextColor="#fff"
+            app:tabTextColor="#5EAAE6"
+           >
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_tabs_pager"
+        android:layout_below="@+id/appBarLayout"
+        >
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+</RelativeLayout>

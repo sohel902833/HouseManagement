@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#fff"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:textSize="19sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/transector_NameTextview"
+            android:text="Md Sohrab hossain"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transector_NameTextview"
+            android:text="450tk"
+            android:textColor="#005A04"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/transection_Balance_TextViewid"
+            />
+        <TextView
+            android:id="@+id/transecotr_DateTextViewid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transection_Balance_TextViewid"
+            android:text="05-03-2000 at 12.20"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

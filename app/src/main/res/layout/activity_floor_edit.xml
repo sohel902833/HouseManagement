@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".User.FloorAloteActivity">
+
+    <include
+        layout="@layout/app_ber_layout"
+        android:id="@+id/floorEdit_ToolbarId"/>
+
+
+    <ScrollView
+        android:layout_below="@+id/floorEdit_ToolbarId"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#3B004C"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/floorEdit_DetailsTextviewid"
+                android:text="First Floor Alote To"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_below="@+id/floorEdit_DetailsTextviewid"
+                android:id="@+id/floorEdit_RenterNameEdittextid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input"
+                android:hint="Renter Name"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:textColorHint="#4A4646"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/floorEdit_RenterNameEdittextid"
+                android:id="@+id/floorEdit_RenterPhoneNumberid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input"
+                android:hint="Renter Phone Number"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:textColorHint="#4A4646"
+                android:textSize="18sp"
+                android:inputType="number"
+                />
+            <EditText
+                android:inputType="number"
+                android:layout_below="@+id/floorEdit_RenterPhoneNumberid"
+                android:id="@+id/floorEdit_AdvanceEdittextied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input"
+                android:hint="Advance"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:textColorHint="#4A4646"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:inputType="number"
+                android:layout_below="@+id/floorEdit_AdvanceEdittextied"
+                android:id="@+id/floorEdit_RentAmountEdittextied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input"
+                android:hint="Rent Amount"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:textColorHint="#4A4646"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Renter Date"
+                android:layout_below="@+id/floorEdit_RentAmountEdittextied"
+                android:layout_marginTop="10dp"
+                android:id="@+id/floorEdit_txt4"
+                />
+            <LinearLayout
+                android:id="@+id/floorEdit_lin1"
+                android:layout_below="@+id/floorEdit_txt4"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/floorEdit_renterDateTextviewid"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="4.5"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@drawable/input"
+                    android:hint="DD/MM/YY"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="5dp"
+                    android:textColor="#000"
+                    android:textColorHint="#4A4646"
+                    android:textSize="18sp"
+                    />
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#457889"
+                    android:background="@drawable/buttonbg1"
+                    android:text="C"
+                    android:padding="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:inputType="number"
+                android:layout_below="@+id/floorEdit_lin1"
+                android:id="@+id/floorEdit_WaterEdittextid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input"
+                android:hint="Water Bill"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:textColorHint="#4A4646"
+                android:textSize="18sp"
+                />
+            <RadioGroup
+                android:id="@+id/floorEdit_water_RadioGroup"
+                android:layout_below="@+id/floorEdit_WaterEdittextid"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    app:buttonTint="#BA0CEC"
+                    android:textColor="#000"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Include"
+                    android:id="@+id/floorEdit_water_Include_RadioButton"
+                    />
+                <RadioButton
+                    app:buttonTint="#BA0CEC"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exclude"
+                    android:id="@+id/floorEdit_water_Exclude_RadioButton"
+                    />
+            </RadioGroup>
+            <EditText
+                android:inputType="number"
+                android:layout_below="@+id/floorEdit_water_RadioGroup"
+                android:id="@+id/floorEdit_GasEdittextid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input"
+                android:hint="Gas Bill"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:textColorHint="#4A4646"
+                android:textSize="18sp"
+                />
+            <RadioGroup
+                android:id="@+id/floorEdit_gas_RadioGroup"
+                android:layout_below="@+id/floorEdit_GasEdittextid"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    app:buttonTint="#BA0CEC"
+                    android:textColor="#000"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Include"
+                    android:id="@+id/floorEdit_gas_Include_RadioButton"
+                    />
+                <RadioButton
+                    app:buttonTint="#BA0CEC"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exclude"
+                    android:id="@+id/floorEdit_gas_Exclude_RadioButton"
+                    />
+            </RadioGroup>
+            <EditText
+                android:inputType="number"
+                android:layout_below="@+id/floorEdit_gas_RadioGroup"
+                android:id="@+id/floorEdit_ElectricityEdittextid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input"
+                android:hint="Electricity Bill"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:textColorHint="#4A4646"
+                android:textSize="18sp"
+                />
+            <RadioGroup
+                android:id="@+id/floorEdit_electriciy_RadioGroup"
+                android:layout_below="@+id/floorEdit_ElectricityEdittextid"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    app:buttonTint="#BA0CEC"
+                    android:textColor="#000"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Include"
+                    android:id="@+id/floorEdit_electriciy_Include_RadioButton"
+                    />
+                <RadioButton
+                    app:buttonTint="#BA0CEC"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exclude"
+                    android:id="@+id/floorEdit_electriciy_Exclude_RadioButton"
+                    />
+            </RadioGroup>
+            <EditText
+                android:inputType="number"
+                android:layout_below="@+id/floorEdit_electriciy_RadioGroup"
+                android:id="@+id/floorEdit_UtilitsEdittextid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input"
+                android:hint="Utilities Bill"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:textColor="#000"
+                android:textColorHint="#4A4646"
+                android:textSize="18sp"
+                />
+            <RadioGroup
+                android:id="@+id/floorEdit_utilities_RadioGroup"
+                android:layout_below="@+id/floorEdit_UtilitsEdittextid"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    app:buttonTint="#BA0CEC"
+                    android:textColor="#000"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Include"
+                    android:id="@+id/floorEdit_utilities_Include_RadioButton"
+                    />
+                <RadioButton
+                    app:buttonTint="#BA0CEC"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exclude"
+                    android:id="@+id/floorEdit_utilities_Exclude_RadioButton"
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Bill Paid Limit Date"
+                android:layout_below="@+id/floorEdit_utilities_RadioGroup"
+                android:layout_marginTop="10dp"
+                android:id="@+id/floorEdit_txt5"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/floorEdit_lin2"
+                android:layout_below="@+id/floorEdit_txt5"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/floorEdit_RentPaidLimitDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@drawable/input"
+                    android:hint="DD/MM/YYY"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="5dp"
+                    android:textColor="#000"
+                    android:textColorHint="#4A4646"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/floorEdit_RentPaidTimeTextviewid"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:background="@drawable/input"
+                    android:hint="HH:MM"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="5dp"
+                    android:textColor="#000"
+                    android:textColorHint="#4A4646"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+            <CheckBox
+                app:buttonTint="#BA0CEC"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/floorEdit_alarmCheckSwitchId"
+                android:layout_below="@+id/floorEdit_lin2"
+                android:layout_marginTop="15dp"
+                android:text="Alarm Over Limit Date"
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/ed_lin1"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/floorEdit_updateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:text="Update Value"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:id="@+id/floorEdit_UpdateRenterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp"
+            android:text="Update Floor"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
